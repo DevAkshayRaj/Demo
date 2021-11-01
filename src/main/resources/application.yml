@@ -1,0 +1,5 @@
+server:
+  port: 7050
+spring:
+  application:
+    name: demo-jenkins-test
