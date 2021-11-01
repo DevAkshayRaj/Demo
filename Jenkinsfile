@@ -14,9 +14,14 @@ pipeline {
                 sh 'docker build -t myorg/myapp .'
             }
         }
+        stage('Stop Previous container'){
+            steps {
+                sh 'docker stop demo-container'
+            }
+        }
         stage('Run Docker Image') {
             steps {
-                sh 'docker run -p 7777:7050 -d myorg/myapp'
+                sh 'docker run -p 7777:7050 --name demo-container -d myorg/myapp'
             }
         }
     }
