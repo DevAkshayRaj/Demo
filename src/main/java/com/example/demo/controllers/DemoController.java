@@ -10,4 +10,8 @@ public class DemoController {
 	public String testMethod() {
 		return "Hellow World !";
 	}
+	@GetMapping("/test2")
+	public String testMethod2() {
+		return "Hellow World 2222222222!";
+	}
 }
