@@ -19,6 +19,11 @@ pipeline {
                 sh 'docker stop demo-container'
             }
         }
+        stage('Remove Previous container'){
+            steps {
+                sh 'docker rm demo-container'
+            }
+        }
         stage('Run Docker Image') {
             steps {
                 sh 'docker run -p 7777:7050 --name demo-container -d myorg/myapp'
