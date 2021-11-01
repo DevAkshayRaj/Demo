@@ -18,4 +18,8 @@ public class DemoController {
 	public String testMethod3() {
 		return "Hellow World 2222222222----------3333333333333!";
 	}
+	@GetMapping("/test4")
+	public String testMethod4() {
+		return "Full Flow Test using jenkins";
+	}
 }
