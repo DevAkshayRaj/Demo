@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Run Docker Image') {
             steps {
-                sh 'docker run -p 7777:7050 myorg/myapp'
+                sh 'docker run -p 7777:7050 -d myorg/myapp'
             }
         }
     }
