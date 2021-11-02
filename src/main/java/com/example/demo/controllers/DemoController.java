@@ -22,4 +22,8 @@ public class DemoController {
 	public String testMethod4() {
 		return "Full Flow Test using jenkins";
 	}
+	@GetMapping("/test5")
+	public String testMethod5() {
+		return "Full Flow Test using jenkins";
+	}
 }
