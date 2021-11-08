@@ -30,4 +30,8 @@ public class DemoController {
 	public String testMethod6() {
 		return "Recent Test";
 	}
+	@GetMapping("/demo1")
+	public String testMethod7() {
+		return "Recent Test";
+	}
 }
